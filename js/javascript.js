@@ -66,5 +66,5 @@ function myFunction() {
 }
 
 function redirect(redirectLocation){
-    window.location.href = "/" + redirectLocation;
+    window.location.href = "/finalProject" + redirectLocation;
 }
