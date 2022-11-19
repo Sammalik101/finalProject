@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet'>
+    <title>propoganda website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<nav class = "nav">
+    <div class="header" id="myHeader">
+    <div id="title">The Michiganian Post</div>
+        <div  class="titleText"><i>In God we Trust, In Truthness we Live.</i></div>
+    <ul class="headerul">
+        <li class="headerli"><a id="nav1"><input type="button"  id="homeButton" value="Home" onclick="redirect('index.html')"></a></li>
+        <li class="headerli"><a id="nav2"><input type="button"  id="sourcesButton" value="Sources" onclick="redirect('sources.html')"></a></li>
+        <li class="headerli"><a id="nav3" class="active"><input type="button" id="contactButton" value="Contact" onclick="redirect('contact.html')"></a></li>
+        <li class="headerli">     
+            <div class="dropdown">
+                <button class="dropbtn" onclick="drop()">History 
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div style="display:none" class="dropdown-content">
+                <div onclick="redirect('gun_control.html')">Gun Control Act</div>
+                <div onclick="redirect('FOP.html')">Firearm Owners' Protection Act</div>
+                <div onclick="redirect('BHVPA.html')">Brady Handgun Violence Protection Act</div>
+                </div>
+            </div>         
+        </li>
+    </ul>
+    </div>
+</nav>
+<div>  
+    <h1 id="header"> The Michiganian Post </h1>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;float:left">November 11th 2022</div>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;left:31%">In God we Trust, In Truthness we Live.</div>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;float:right">9th Edition Newsletter</div>
+        <br>
+    <svg height="10" width="100%">
+    <line x1="100%" y1="1" x2="0" y2="0" style="stroke:rgb(0,0,0);stroke-width:3" />
+    </svg>
+    <br>
+    <div style="font-family: 'Arial', Helvitica, sans-serif;"> GUNS &emsp; VIOLENCE &emsp; CRIME &emsp; SOCIETY &emsp; LAWS &emsp; CONGRESS &emsp; FIREARMS &emsp; CONFLICT &emsp; VICTIMS</div>
+    <br>
+    <div class = "infoTag">
+        <button class="skip">skip to main content</button>
+        <p class ="page">Current page: CONTACT </p>
+    </div>
+</div>
+
+
+<div id="content3" style="padding: 30px 40px;">
+    <h2>Main Contributors</h2>
+    <div id="author">
+        <img style="width:60px;height:60px;position:relative;top:15%;display:inline-block;background-color: black;border-radius: 50px" alt="profile picture" src="https://assets.vinomofo.com/assets/common/default-profile-image-63c9605cf872c481782aa96d54b76eeaf44732e75b33ab1995fef60b224d00e2.png" >
+        <div style="display: inline-block;padding-left: 20px;position: relative;top:5%">
+            <h3 style="margin-bottom: 5px;">Shahmeer Malik</h3>
+            <i><p style="margin-top: 5px;">Author & Researcher</p></i>
+        </div>
+    </div>
+    <div id="author">
+        <img style="width:60px;height:60px;position:relative;top:15%;display:inline-block;background-color: black;border-radius: 50px" alt="profile picture" src="https://assets.vinomofo.com/assets/common/default-profile-image-63c9605cf872c481782aa96d54b76eeaf44732e75b33ab1995fef60b224d00e2.png" >
+        <div style="display: inline-block;padding-left: 20px;position: relative;top:5%">
+            <h3 style="margin-bottom: 5px;">Shahmeer Malik</h3>
+            <i><p style="margin-top: 5px;">Website Designer</p></i>
+        </div>
+    </div>
+    <br>
+    <div style="width:40%">
+        <div style="font-family: Arial, Helvetica, sans-serif;border-width:1px;border-bottom-color: black;padding-bottom: 10px;padding-top: 10px; border-bottom-style: ridge;font-size: 30px"><b>Contact Us</b></div>
+        <p style="">If you wish to discuss anyhting relating to the article or authors, please feel free to fill out the form below so we can get back to you as soon as possible</p>
+    </div>
+    <br>
+    <div style="width:70%;height:140px">
+        <div style="width:40%;display: inline-block">
+            <label for="name">name</label>
+            <input id="name" type="text" style="margin-bottom: 5px;padding-bottom: 5px;border-style:ridge;border-radius: 5px;width:100%;height:36px" placeholder="  Name">
+            <br>
+            <label for="Recipient">Recipient</label>
+            <input id="Recipient" type="text" style="margin-bottom: 5px;padding-bottom: 5px;border-style:ridge;border-radius: 5px;width:100%;height:36px" placeholder="  Recipient">
+            <br>
+            <label for="article">article name</label>
+            <input id="article" type="text" style="margin-bottom: 5px;padding-bottom: 5px;border-style:ridge;border-radius: 5px;width:100%;height:36px" placeholder="  Article Name">
+        </div>
+        <div style="width:40%;height:100%;display: inline-block">
+            <label for="comment">comment</label>
+            <input id="comment" type="text" style="padding-bottom: 5px;border-style:ridge;border-radius: 5px;width:100%;height:100%;position: relative;top:-50px;margin-left: 10px;" placeholder="    Comment Here">
+        </div>
+        <div style="width:10%;height:100%;display: inline-block">
+            <input type="button" style="padding-bottom: 5px;border-style:ridge;border-radius: 5px;width:100%;height:100%;position: relative;top:-48px;margin-left: 20px;" value="submit">
+        </div>
+    </div>
+</div>
+
+<script src = "js/javascript.js"></script>
+</body>

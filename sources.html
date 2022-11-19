@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet'>
+    <title>propoganda website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<nav class = "nav">
+    <div class="header" id="myHeader">
+    <div id="title">The Michiganian Post</div>
+        <div  class="titleText"><i>In God we Trust, In Truthness we Live.</i></div>
+    <ul class="headerul">
+        <li class="headerli"><a id="nav1"><input type="button"  id="homeButton" value="Home" onclick="redirect('index.html')"></a></li>
+        <li class="headerli"><a id="nav2" class="active"><input type="button"  id="sourcesButton" value="Sources" onclick="redirect('sources.html')"></a></li>
+        <li class="headerli"><a id="nav3"><input type="button" id="contactButton" value="Contact" onclick="redirect('contact.html')"></a></li>
+        <li class="headerli">     
+            <div class="dropdown">
+                <button class="dropbtn" onclick="drop()">History 
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div style="display:none" class="dropdown-content">
+                <div onclick="redirect('gun_control.html')">Gun Control Act</div>
+                <div onclick="redirect('FOP.html')">Firearm Owners' Protection Act</div>
+                <div onclick="redirect('BHVPA.html')">Brady Handgun Violence Protection Act</div>
+                </div>
+            </div>         
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div>  
+    <h1 id="header"> The Michiganian Post </h1>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;float:left">November 11th 2022</div>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;left:31%">In God we Trust, In Truthness we Live.</div>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;float:right">9th Edition Newsletter</div>
+        <br>
+    <svg height="10" width="100%">
+    <line x1="100%" y1="1" x2="0" y2="0" style="stroke:rgb(0,0,0);stroke-width:3" />
+    </svg>
+    <br>
+    <div style="font-family: 'Arial', Helvitica, sans-serif;"> GUNS &emsp; VIOLENCE &emsp; CRIME &emsp; SOCIETY &emsp; LAWS &emsp; CONGRESS &emsp; FIREARMS &emsp; CONFLICT &emsp; VICTIMS</div>
+    <br>
+    <div class = "infoTag">
+        <button class="skip">skip to main content</button>
+        <p class ="page">Current page: SOURCES </p>
+    </div>
+</div>
+
+<div id="content2" style="padding: 10px 40px;">
+    <h3 style="border-style: double;border-width: 1px;padding: 5px 5px">Research Sources</h3>
+    <div class="subcategory"> &ensp;&ensp; Images</div>
+    <ul>
+      <li>https://tribunecontentagency.com/article/sheneman-drew-editorial-cartoon-20160106edshe-atif/</li>
+      <li>https://www.solidprinciples.com/blog/political-cartoons-michael-ramirez-132/</li>
+      <li>https://www.columbian.com/photos/galleries/2015/12/06/editorial-cartoons-dec-6-12/</li>
+    </ul> 
+    
+    <div class="subcategory"> &ensp;&ensp; Information</div>
+    <ul>
+      <li><a href="https://gun-control.procon.org/">https://gun-control.procon.org/</a></li>
+      <li><a href="https://www.nraila.org/gun-laws/">https://www.nraila.org/gun-laws/</a></li>
+      <li><a href="http://www.debate.org/opinions/does-there-need-to-be-stricter-laws-for-gun-control">http://www.debate.org/opinions/does-there-need-to-be-stricter-laws-for-gun-control</a></li>    
+      <li><a href="http://time.com/5169210/us-gun-control-laws-history-timeline/">http://time.com/5169210/us-gun-control-laws-history-timeline/</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Gun_Control_Act_of_1968">https://en.wikipedia.org/wiki/Gun_Control_Act_of_1968</a></li>
+      <li><a href="https://www.atf.gov/rules-and-regulations/national-firearms-act">https://www.atf.gov/rules-and-regulations/national-firearms-act</a></li>  
+      <li><a href="https://www.nij.gov/topics/crime/gun-violence/pages/welcome.aspx">https://www.nij.gov/topics/crime/gun-violence/pages/welcome.aspx</a></li>
+      <li><a href="https://www.npr.org/2017/10/05/555580598/fact-check-is-chicago-proof-that-gun-laws-don-t-work">https://www.npr.org/2017/10/05/555580598/fact-check-is-chicago-proof-that-gun-laws-don-t-work</a></li>
+    </ul> 
+    
+    <div class="subcategory"> &ensp;&ensp; Website Creation Research</div>
+    <ul>
+      <li>https://www.w3schools.com/default.asp</li>
+      <li>https://learn.shayhowe.com/html-css/positioning-content/</li>
+    </ul> 
+
+    <div class="subcategory"> &ensp;&ensp; Google Scholar Websites</div>
+    <ul>
+        <li><a href="https://www.journals.uchicago.edu/doi/abs/10.1086/467528?journalCode=jls">https://www.journals.uchicago.edu/doi/abs/10.1086/467528?journalCode=jls</a></li>
+      <li><a href="https://heinonline.org/HOL/LandingPage?handle=hein.journals/cumlr17&div=34&id=&page=">https://heinonline.org/HOL/LandingPage?handle=hein.journals/cumlr17&div=34&id=&page=</a></li>
+      <li><a href="https://jamanetwork.com/journals/jama/fullarticle/192946">https://jamanetwork.com/journals/jama/fullarticle/192946</a></li>
+    </ul> 
+</div>
+    
+<script src = "js/javascript.js"></script>
+</body>

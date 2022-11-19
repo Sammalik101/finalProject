@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet'>
+    <title>propoganda website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<nav class = "nav">
+    <div class="header" id="myHeader">
+    <div id="title">The Michiganian Post</div>
+        <div  class="titleText" ><i>In God we Trust, In Truthness we Live.</i></div>
+    <ul class="headerul">
+        <li class="headerli"><a id="nav1"><input type="button"  id="homeButton" value="Home" onclick="redirect('index.html')"></a></li>
+        <li class="headerli"><a id="nav2"><input type="button"  id="sourcesButton" value="Sources" onclick="redirect('sources.html')"></a></li>
+        <li class="headerli"><a id="nav3"><input type="button" id="contactButton" value="Contact" onclick="redirect('contact.html')"></a></li>
+        <li class="headerli" >     
+            <div class="dropdown">
+                <button class="dropbtn" onclick="drop()" class="active">History 
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div style="display:none" class="dropdown-content">
+                <div onclick="redirect('gun_control.html')">Gun Control Act</div>
+                <div onclick="redirect('FOP.html')">Firearm Owners' Protection Act</div>
+                <div onclick="redirect('BHVPA.html')">Brady Handgun Violence Protection Act</div>
+                </div>
+            </div>         
+        </li>
+    </ul>
+    </div>
+</nav>
+<div>  
+    <h1 id="header"> The Michiganian Post </h1>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;float:left">November 11th 2022</div>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;left:31%">In God we Trust, In Truthness we Live.</div>
+    <div style="position: relative;font-family: 'Times New Roman', Times, serif; display: inline-block;float:right">9th Edition Newsletter</div>
+        <br>
+    <svg height="10" width="100%">
+    <line x1="100%" y1="1" x2="0" y2="0" style="stroke:rgb(0,0,0);stroke-width:3" />
+    </svg>
+    <br>
+    <div style="font-family: 'Arial', Helvitica, sans-serif;"> GUNS &emsp; VIOLENCE &emsp; CRIME &emsp; SOCIETY &emsp; LAWS &emsp; CONGRESS &emsp; FIREARMS &emsp; CONFLICT &emsp; VICTIMS</div>
+    <br>
+    <div class = "infoTag">
+        <button class="skip">skip to main content</button>
+        <p class ="page">Current page: GUN CONTROL ACT </p>
+    </div>
+</div>
+
+<div class="content" id="content4" style="padding:50px 100px">
+    <div style="border-right-width: 1px;border-right-style:ridge;padding-right: 10px;display:inline-block;width:70%;float:left">
+        <div style="font-family: Arial, Helvetica, sans-serif;font-size: 26px">FIREARMS AND FEDERAL LAW: THE GUN CONTROL ACT OF 1968</div>
+        <div><i>Leading up to the Gun Control Act...</i></div>
+
+        <hr>
+        <p style="font-family: Arial, Helvetica, sans-serif;"><b>Between 1963 and 1978, ... Killings by all means other than gun increased from 2.0 per 100,000 to 3.1 per 100,000. Gun killings increased from 2.5 per 100,000 to 6.2 per 100,000.</b></p>
+        <div style="background-color: black;width:100%;height:500px">
+            <img style="width:100%;height:100%;" src="images/gun.jpg" alt="gun_image">
+        </div>
+        <br>
+        <div style="font-family: Arial, Helvetica, sans-serif;">-Congress argued for 5 years on firearm control, but eventually passed it in hopes of "providing support to Federal, State and Local law enforcement officals in their fight against crime and violence.</div>
+        <hr>
+        <div>Even with all the restrictions placed on guns 5 decades from ago, and as the author, Franklin E. Zimring has stated, "In recent years, the rate of gun violence in the United States hsa managed to grow to alarming proportions"... the more people have tried to restrict gun rights, the less favorbale the outcome is.</div> 
+        <br>
+        <div id="author">
+            <img style="width:60px;height:60px;position:relative;top:15%;display:inline-block;background-color: black;border-radius: 50px" src="https://assets.vinomofo.com/assets/common/default-profile-image-63c9605cf872c481782aa96d54b76eeaf44732e75b33ab1995fef60b224d00e2.png" alt="profile_blank" >
+            <div style="display: inline-block;padding-left: 20px;position: relative;top:5%">
+                <h3 style="margin-bottom: 5px;">Shahmeer Malik</h3>
+                <i><p style="margin-top: 5px;">Author</p></i>
+            </div>
+        </div>
+    </div>
+    <div style="width:27%;display:inline-block;float:left;padding-left:10px;">
+        <div class="sidevar">
+            <div style="background-color:black;color:white;padding:3px 4px"> Main Contributor</div>
+            <hr>
+            <div>Franklin E. Zimring</div>
+            <i>-Main Author</i>
+            <hr>
+            <div><b>LAW | PROFESSOR | MAN</b></div>
+            <hr>
+            <div>American criminologist, law professor, and the William G. Simon Professor of Law at the UC Berkeley School of Law.</div>
+            <br>
+            <div style="padding: 3px 3px; border-width:1px;border-style:ridge">
+                <a href="https://www.journals.uchicago.edu/doi/abs/10.1086/467528?journalCode=jls">https://www.journals.uchicago.edu/doi/abs/10.1086/467528?journalCode=jls</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src = "js/javascript.js"></script>
+</body>
