@@ -1,5 +1,5 @@
 add more images   ***
 implement skip to content  ****
-add a grid element
-table, mobile and desktop design implementation
+add a grid element *** 
+table, mobile and desktop design implementation ***
 change images to subfolder redirect ****

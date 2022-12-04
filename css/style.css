@@ -97,10 +97,10 @@ body {
   #header{
       background-color:white;
       font-family: 'UnifrakturMaguntia';font-size: 45px;
-      padding-left:34%;
       padding-bottom:5px;
       padding-top:10px;
       color:black;
+      text-align: center;
   }
   .headerul {
       list-style-type: none;
@@ -203,4 +203,98 @@ body {
 
   .paragraph{
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #imageGrid{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 5px;
+    justify-items: center;
+    
+  }
+  #imageGrid > img{
+    height: 200px;
+    width: 90%;
+    border: 3px solid black;
+    border-width: 10px;
+    
+  }
+
+  #edition, #logo, #date{
+    position: relative;
+    font-family: 'Times New Roman', 
+    Times, serif;
+    display: inline-block;
+  }
+
+  #gridTexts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skip:hover{
+    border: 1px dotted red;
+  }
+  .skip:focus {
+    transform: translateY(0%);
+  }
+
+  @media screen and (max-width: 730px) {
+    #header{
+      font-size: 40px;
+      text-align: center;
+      padding: 10px ;
+    }
+    #gridContent{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 100%; /* Should be removed. Only for demonstration */
+    }
+    #gridContent:nth-child(3) {
+      break-after: always; /* CSS 3 syntax */
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+
+    #header{
+      font-size: 30px;
+      text-align: center;
+      padding: 10px ;
+    }
+    #gridTexts{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #content1, #content2, #content3, #content4, #content5, #content6, #content7{
+      max-width: 600px;
+      overflow: hidden;
+      text-overflow: hidden;
+      word-wrap: break-word;
+    }
+    #gridContent{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .column {
+      float: left;
+      width: 100%;
+      padding: 10px;
+      height: 100%; /* Should be removed. Only for demonstration */
+    }
   }
