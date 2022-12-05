@@ -342,4 +342,9 @@ body {
       text-overflow: hidden;
       word-wrap: break-word;
     }
+
+    #imageGrid{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1fr, 9);
+    }
   }
