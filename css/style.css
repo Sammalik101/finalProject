@@ -243,6 +243,29 @@ body {
     transform: translateY(0%);
   }
 
+
+  #articleGrid{
+    display: flex;
+    flex-direction: row;
+  }
+  .articlePageContent{
+    border-right-width: 1px;
+    border-right-style:ridge;
+    padding-right: 10px;
+    width:70%;
+    float:left;
+  }
+  .articlePageContributor{
+    width:27%;
+    float:left;
+    padding-left:10px;
+    text-overflow: hidden;
+    word-wrap: break-word;
+  }
+
+
+
+
   @media screen and (max-width: 730px) {
     #header{
       font-size: 40px;
@@ -263,6 +286,8 @@ body {
     #gridContent:nth-child(3) {
       break-after: always; /* CSS 3 syntax */
     }
+
+    
   }
 
 
@@ -296,5 +321,25 @@ body {
       width: 100%;
       padding: 10px;
       height: 100%; /* Should be removed. Only for demonstration */
+    }
+
+    #articleGrid{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      row-gap: 30px;
+    }
+    .articlePageContent{
+      border-right-width: 1px;
+      border-right-style:ridge;
+      padding-right: 10px;
+      width:100%;
+    }
+    .articlePageContributor{
+      width:100%;
+      padding-left:10px;
+      justify-self: center;
+      text-overflow: hidden;
+      word-wrap: break-word;
     }
   }
