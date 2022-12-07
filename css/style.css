@@ -1,4 +1,76 @@
-body {
+  #header{
+    font-size: 30px;
+    padding: 10px ;
+    background-color:white;
+    font-family: 'UnifrakturMaguntia';font-size: 45px;
+    padding-bottom:5px;
+    padding-top:10px;
+    color:black;
+    text-align: center;
+  }
+  #gridTexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #content1, #content2, #content3, #content4, #content5, #content6, #content7{
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: hidden;
+    word-wrap: break-word;
+  }
+  #gridContent{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr); 
+    width: 100%;
+  }
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 100%; /* Should be removed. Only for demonstration */
+  }
+
+  #articleGrid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 30px;
+  }
+  .articlePageContent{
+    border-right-width: 1px;
+    border-right-style:ridge;
+    padding-right: 10px;
+    width:100%;
+  }
+  .articlePageContributor{
+    width:100%;
+    padding-left:10px;
+    justify-self: center;
+    text-overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  #imageGrid{
+    margin: 5%;
+    display: grid;
+    row-gap: 15px;
+    column-gap: 5px;
+    justify-items: center;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 9);
+  }
+  #imageGrid > img{
+    height: 200px;
+    width: 90%;
+    border: 3px solid black;
+    border-width: 10px;
+  }
+  body {
     margin: 0;
     font-family: "Times New Roman", Times, serif;
   
@@ -18,7 +90,7 @@ body {
       border-width: 1px;
       border-style: ridge;
       border-color: black;
-      width=100%; 
+      width:100%; 
       padding:10px 10px;
       font-family: "Arial", "Helvetica", "sans-serif";  
   }
@@ -87,21 +159,7 @@ body {
       font-size: 30px;
       color:white;
   }
-      .column {
-          float: left;
-          width: 30%;
-          padding: 10px;
-          height: 100%; /* Should be removed. Only for demonstration */
-      }
-  
-  #header{
-      background-color:white;
-      font-family: 'UnifrakturMaguntia';font-size: 45px;
-      padding-bottom:5px;
-      padding-top:10px;
-      color:black;
-      text-align: center;
-  }
+
   .headerul {
       list-style-type: none;
       margin: 0;
@@ -158,15 +216,14 @@ body {
       border-style:ridge;
   }
   .box {
-  
-  width: 32.85%;
-  height:200px;
-  background:white;
-  border-style: solid;
-  border-width: 0.6px;
-  padding-top: 10px;
-  padding-left: 1px;
-  display:inline-block;
+    width: 32.85%;
+    height:200px;
+    background:white;
+    border-style: solid;
+    border-width: 0.6px;
+    padding-top: 10px;
+    padding-left: 1px;
+    display:inline-block;
   }
 
   #header{
@@ -190,8 +247,6 @@ body {
     font-weight: 900;
     margin-left: 10px;
   }
-
-
   .titleText{
     font-family: 'Times New Roman', 
     Times, serif; 
@@ -204,38 +259,12 @@ body {
   .paragraph{
     font-family: Arial, Helvetica, sans-serif;
   }
-
-  #imageGrid{
-    margin: 5%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 15px;
-    column-gap: 5px;
-    justify-items: center;
-    
-  }
-  #imageGrid > img{
-    height: 200px;
-    width: 90%;
-    border: 3px solid black;
-    border-width: 10px;
-    
-  }
-
   #edition, #logo, #date{
     position: relative;
     font-family: 'Times New Roman', 
     Times, serif;
     display: inline-block;
   }
-
-  #gridTexts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .skip:hover{
     border: 1px dotted red;
   }
@@ -243,108 +272,82 @@ body {
     transform: translateY(0%);
   }
 
-
-  #articleGrid{
-    display: flex;
-    flex-direction: row;
-  }
-  .articlePageContent{
-    border-right-width: 1px;
-    border-right-style:ridge;
-    padding-right: 10px;
-    width:70%;
-    float:left;
-  }
-  .articlePageContributor{
-    width:27%;
-    float:left;
-    padding-left:10px;
-    text-overflow: hidden;
-    word-wrap: break-word;
-  }
-
-
-
-
-  @media screen and (max-width: 730px) {
+  @media screen and (min-width: 550px) {
     #header{
       font-size: 40px;
       text-align: center;
       padding: 10px ;
     }
-    #gridContent{
+    /* #gridContent{
       display: flex;
       flex-direction: row;
       width: 100%;
-    }
+    } */
     .column {
       float: left;
-      width: 50%;
+      width: 90%;
       padding: 10px;
       height: 100%; /* Should be removed. Only for demonstration */
     }
     #gridContent:nth-child(3) {
       break-after: always; /* CSS 3 syntax */
     }
-
-    
-  }
-
-
-  @media screen and (max-width: 500px) {
-
-    #header{
-      font-size: 30px;
-      text-align: center;
-      padding: 10px ;
+    #imageGrid{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); 
+    }
+    #gridContent{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); 
+    }
+    #content1, #content2, #content3, #content4, #content5, #content6, #content7{
+      max-width: 100%;
     }
     #gridTexts{
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
     }
-    
-    #content1, #content2, #content3, #content4, #content5, #content6, #content7{
-      max-width: 600px;
-      overflow: hidden;
-      text-overflow: hidden;
-      word-wrap: break-word;
-    }
-    #gridContent{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    .column {
-      float: left;
-      width: 100%;
-      padding: 10px;
-      height: 100%; /* Should be removed. Only for demonstration */
-    }
+  }
 
-    #articleGrid{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      row-gap: 30px;
-    }
+  @media screen and (min-width: 850px) {
+
     .articlePageContent{
       border-right-width: 1px;
       border-right-style:ridge;
       padding-right: 10px;
-      width:100%;
+      width:70%;
+      float:left;
     }
     .articlePageContributor{
-      width:100%;
+      width:27%;
+      float:left;
       padding-left:10px;
-      justify-self: center;
       text-overflow: hidden;
       word-wrap: break-word;
     }
-
+    .column {
+      width: 100%;
+    } 
+    /* #gridTexts{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    } */
+    #articleGrid{
+      display: flex;
+      flex-direction: row;
+    }
     #imageGrid{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(1fr, 9);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr); 
+    }
+    #gridContent{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr); 
+      column-gap: 30px;
     }
   }
